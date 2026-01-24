@@ -3,6 +3,7 @@ from discord.ext import commands
 import os
 import fruits_data
 from dotenv import load_dotenv
+from keep_alive import keep_alive
 
 # Load environment variables if .env exists (for local testing)
 load_dotenv()
@@ -85,4 +86,5 @@ if __name__ == "__main__":
         print("Error: DISCORD_TOKEN not found in environment variables.")
         print("Please set it in your Render environment variables or .env file.")
     else:
+        keep_alive()  # Start the web server
         bot.run(TOKEN)
