@@ -24,5 +24,18 @@ This is a simple Discord bot that tells you the fixed Beli and Robux prices for 
    - Add this line inside it: `DISCORD_TOKEN=your_token_here_paste_it`
    - Run command: `python bot.py`
 
+## ✅ Slash Commands
+- `/price <fruit>`
+- `/list`
+
+## 🔐 Optional Anti‑Abuse Settings (Environment Variables)
+- `ALLOWED_GUILDS` (comma-separated IDs): only allow commands in these servers.
+- `RATE_LIMIT_MAX` (default `5`): max requests per user in the window.
+- `RATE_LIMIT_WINDOW_SECONDS` (default `10`): window size in seconds.
+- `LOG_LEVEL` (default `INFO`)
+
+## 🔗 Invite Scope
+Make sure your bot invite uses the `applications.commands` scope so slash commands show up.
+
 ## 🔗 Source
 Idea Source: [Blox fruits prices](https://bloxfruitscode.com/blox-fruits-values-trade/)
